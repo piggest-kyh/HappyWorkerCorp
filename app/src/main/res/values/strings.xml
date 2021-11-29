@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HappyWorkerCorp</string>
+    <string name="hr_greetings">Good Day, Mr HR! \n What do you want to do today?</string>
+    <string name="hire_new_worker">Hire new worker</string>
+    <string name="manage_list_of_workers">Manage list of workers</string>
+    <string name="title_activity_worker_list">WorkerListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name">Name</string>
+    <string name="position">position</string>
+    <string name="edit_salary_tv">Salary:</string>
+    <string name="salary">Salary</string>
+    <string name="number_of_workers">Number of workers: %1$d </string>
+    <string name="average_salary">Average Salary: %1$d </string>
+    <string name="position_edit">Position:</string>
+    <string name="fire">FIRE</string>
+    <string name="hire">HIRE</string>
+</resources>

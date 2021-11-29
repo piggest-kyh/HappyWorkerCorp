@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.EditWorkerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/new_worker_toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageButton
+            android:id="@+id/edit_worker_backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:tint="#FFF" />
+
+
+        <ImageButton
+            android:id="@+id/save_button_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/save_icon"
+            android:background="@color/clear"
+ />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/edit_worker_avatar"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_worker_toolbar"
+        app:srcCompat="@drawable/default_avatar" />
+
+    <EditText
+        android:id="@+id/edit_worker_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_worker_avatar"
+        app:layout_constraintTop_toTopOf="@+id/edit_worker_avatar"
+        tools:text="Denis Raktin" />
+
+    <TextView
+        android:id="@+id/edit_date_of_employment_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="Date Of Employment:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_worker_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_worker_name" />
+
+    <TextView
+        android:id="@+id/edit_position_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/position_edit"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_worker_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_worker_avatar" />
+
+    <TextView
+        android:id="@+id/edit_salary_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/edit_salary_tv"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_position_tv"
+        app:layout_constraintTop_toBottomOf="@+id/edit_position_tv" />
+
+    <EditText
+        android:id="@+id/edit_position_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-5dp"
+        android:ems="10"
+        android:hint="@string/position"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_position_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_position_tv"
+        tools:text="Programmer" />
+
+    <EditText
+        android:id="@+id/edit_salary_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-5dp"
+        android:ems="10"
+        android:hint="@string/salary"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_salary_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_position_tv"
+        tools:text="$10 000" />
+
+    <Button
+        android:id="@+id/get_photo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get photo"
+        android:onClick="getPhotoBtnClicked"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_worker_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_worker_avatar" />
+
+    <Button
+        android:id="@+id/hire_or_fire_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Hire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
